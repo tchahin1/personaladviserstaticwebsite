@@ -2,13 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <script>
+            // window.open('personaladviserapp://forgot_password');
+
+            var redirectToApp = function() {
+                window.location = 'personaladviserapp://forgot_password';
+            };
+
+            window.onload = redirectToApp;
+        </script>
     </head>
     <body>
         <p>
             Redirecting
         </p>
-        <script>
-            window.open('personaladviserapp://forgot_password', '_system');
-        </script>
     </body>
 </html>
